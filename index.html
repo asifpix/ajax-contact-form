@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Ajax Contact Form - iThemesLab</title>
+</head>
+<body>
+    <!-- jumotron start -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-4">Ajax Contact Form</h1>
+                    <p class="lead">This is a simple ajax driven cotact form with data validation to use in HTML file.</p>
+                    <hr class="my-4">
+                    <p>Author Name: iThemesLab</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="https://themeforest.net/user/ithemeslab/portfolio?ref=ithemeslab" role="button">Visit now</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron end -->
+
+    <div class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contact-form" data-toggle="validator" role="form">
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputName">Name</label>
+                                    <input id="inputName" type="text" class="form-control" placeholder="Name" required data-error="Enter your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input id="inputEmail" type="email" class="form-control" placeholder="Email" required data-error="Enter email address">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputSubject">Subject</label>
+                                    <input id="inputSubject" type="text" class="form-control" placeholder="Subject" required data-error="Enter message subject">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div> <!-- /.form-row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="inputMessage">Message</label>
+                                    <textarea class="form-control" id="inputMessage" rows="5" required data-error="Enter message with details"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div> <!-- /.form-row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-2">Send Mail</button>
+                            </div>
+                        </div> <!-- /.form-row -->
+                        <div class="form-row">
+                            <div class="col">
+                                <div id="msgalert" class="hidden"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /.contact-form-section -->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="assets/js/vendor/validator.min.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>
