@@ -48,9 +48,9 @@
 
     function submitMSG(valid, msg){
         if(valid){
-            var msgClasses = "animated text-center alert alert-success mt15";
+            var msgClasses = "animated text-center alert alert-danger mt15";
         } else {
-            var msgClasses = "text-center alert alert-danger mt15";
+            var msgClasses = "text-center alert alert-success mt15";
         }
         $("#msgalert").removeClass().addClass(msgClasses).text(msg);
     }
