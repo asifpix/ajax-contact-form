@@ -43,7 +43,7 @@ $msgBody .= $input_message;
 $msgBody .= "\n";
 
 //send email
-$success = mail($EmailTo, $subject, $msgBody, "From:".$input_email);
+$success = mail($EmailTo, $input_subject, $input_message, "From:".$input_email);
 
 // redirect to success page
 if ( $success && $errorMSG == "" ) {
